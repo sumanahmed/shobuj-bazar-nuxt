@@ -1,73 +1,42 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        shobuj-nuxt
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="hero-slider-with-category-container mt-20 mb-35">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <sidebar />
+          </div>
+          <div class="col-lg-9 col-md-9">
+            <ad />
+          </div>
+        </div>
       </div>
     </div>
+    <policy />
+    <topCategory />
+    <specialOffer />
+    <moreProduct />
   </div>
 </template>
 
 <script>
-export default {}
+import sidebar from '@/components/inc/sidebar'
+import ad from '@/components/home/ad'
+import policy from '@/components/home/policy'
+import topCategory from '@/components/home/topCategory'
+import specialOffer from '@/components/home/specialOffer'
+import moreProduct from '@/components/home/moreProduct'
+export default {
+  components: {
+    sidebar,
+    ad,
+    policy,
+    topCategory,
+    specialOffer,
+    moreProduct
+  }
+}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

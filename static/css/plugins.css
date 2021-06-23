@@ -67,13 +67,12 @@
  
  .slick-list
  {
-     position: relative;
- 
+     position: relative; 
      display: block;
-     overflow: hidden;
- 
+     overflow: hidden; 
      margin: 0;
      padding: 0;
+     margin-top: 30px !important;
  }
  .slick-list:focus
  {
@@ -136,6 +135,9 @@
  .slick-slide img
  {
      display: block;
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
  }
  .slick-slide.slick-loading img
  {

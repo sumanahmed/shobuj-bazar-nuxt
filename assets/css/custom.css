@@ -1,0 +1,191 @@
+.container{
+    width:100% !important;
+}
+
+.error{
+    color: red;
+}
+
+#sidebar ul li a{
+    font-family: sans-serif;
+    display: block;
+    padding: 8px 5px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #606060;
+    font-weight: 400;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#sidebar ul li a:hover {
+    color: #0a5c35;
+}
+
+#sidebar ul.has-sub{
+    display: none;
+}
+
+#sidebar .has-sub{
+    padding-left: 20px !important;
+}
+
+#sidebar a.has-dropdown::after{
+    font-family: 'fontAwesome';
+    content: "\f107";
+    position: relative;
+    right: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+.category-item{
+    border-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 20px !important;
+}
+
+.breadcrumb-area .breadcrumb-container{
+    padding-top:20px !important;
+}
+.single-product-content-container{
+    padding:30px 30px !important;
+}
+
+.account-details-form input, .login-form input, .register-button,
+.myaccount-content button.save-change-btn, 
+.calculate-shipping form .nice-select,
+input[type='text'], input[type='submit'], input[type='email'],
+button.update-btn, button.checkout-btn,
+button.place-order, .checkout-form .nice-select{
+    border-radius: 0px !important;
+}
+
+a.checkout-btn{
+    margin-top: 10px;
+    width: 140px;
+    height: 36px;
+    border: 1px solid #999999;
+    line-height: 24px;
+    padding: 5px 20px;
+    color: #666666;
+    background-color: transparent;
+    margin-left: 20px;
+    float: right;
+}
+
+.account-details-form input {
+    padding: 11px 10px !important;
+}
+.lang-currency-dropdown ul li:hover ul{
+    width: 115px;
+    padding: 6px 5px;
+}
+
+.lang-currency-dropdown ul li:hover ul li{
+    width:100px;
+}
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.home-other-navigation-menu .main-menu > nav > ul > li > a:hover {
+    color: #fff;
+}
+
+.category-slider-container .slick-slide .category-image img {
+    border-radius: 50%;
+    width: 121px;
+    height: 121px;
+}
+
+.qty-btn{
+    display: none;
+}
+
+.modal-header .bg-success {
+    background-color: #0A5C35 !important;
+}
+
+.modal-header .bg-success .modal-title{
+    color: #fff !important;
+}
+.single-product-img img{
+    width:300px !important;
+}
+
+.cart-float-single-item-image img.img-fluid{
+    width: 30px!important;
+    height: 30px!important;
+}
+.cart-floating-box .cart-float-single-item .cart-float-single-item-image {
+    width: 15% !important;
+    margin-right: 0px !important;
+}
+.cart-floating-box .cart-float-single-item .cart-float-single-item-desc p {
+    margin-bottom: 0 !important;
+    float: left !important;
+    margin-right: 10px !important;
+}
+.cart-floating-box .cart-float-single-item, .cart-floating-box .cart-items,
+.cart-floating-box .cart-calculation .calculation-details p  {
+    margin-bottom: 5px !important;
+}
+.cart-floating-box .cart-calculation .calculation-details {
+    margin-bottom: 10px !important;
+}
+
+.floating-cart-btn a {
+    height: 40px !important;
+    line-height: 40px !important;
+    margin: 0 4px !important;
+    padding: 0 15px !important;
+}
+.stockout{
+    background: #ff0000 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    height: 24px;
+    left: 20px;
+    line-height: 24px;
+    min-height: auto;
+    min-width: 44px;
+    padding: 0 9px;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    top: 20px;
+    z-index: 42;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.resend-button{
+    margin-left:5px !important;
+}
+.resend-button:hover{
+    color:#fff !important;
+}
+.page-item.active .page-link {
+    background-color: #0A5C35!important;
+    border-color: #0A5C35!important;    
+    border-radius: 3px;
+}
+#sidebar ul.main-ul{
+    overflow-y: scroll !important;
+    height: 400px !important;
+}

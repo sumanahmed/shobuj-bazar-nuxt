@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', async: true },
+      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico', async: true },
       { hid: 'main', rel: 'stylesheet', href: '/css/bootstrap.min.css', async: true },
       { hid: 'main', rel: 'stylesheet', href: '/css/font-awesome.min.css', async: true },
       { hid: 'main', rel: 'stylesheet', href: '/css/elegent.min.css', async: true },
@@ -28,11 +28,13 @@ export default {
       { hid: 'main', src: '/js/plugins.js', async: true },
       { hid: 'main', src: '/js/main.js', async: true },
       { hid: 'main', src: '/js/custom.js', async: true },
+      { hid: 'main', src: 'https://unpkg.com/vue-slick-carousel', async: true },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~assets/css/custom.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -52,7 +54,15 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-izitoast'    
   ],
+
+  // izitoast 
+  izitoast: {
+    position: 'bottomRight',
+    transitionIn: 'bounceInLeft',
+    transitionOut: 'fadeOutRight',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
