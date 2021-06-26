@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 text-lg-left text-md-center text-sm-center">
                     <div class="logo">
-                        <a href="https://shobujbazar.com">
+                        <nuxt-link to="/">
                             <img src="/images/logo.png" class="img-fluid" alt="" style="width:130px;height: 50px; padding-top: 10px;">
-                        </a>
+                        </nuxt-link>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12 col-xs-12">

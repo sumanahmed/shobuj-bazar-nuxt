@@ -11,9 +11,7 @@
                                 </div>
                             </nav>
                         </div>
-                        <div class="row">
-                            <singleItem />                                       
-                        </div>
+                        <singleItem :products="products" />   
                     </div>
                 </div>
             </div>
@@ -24,6 +22,23 @@
 import singleItem from '@/components/product/singleItem'
 
 export default {
-    components: { singleItem }
+    components: { singleItem },
+    data () {
+        return {
+            baseUrl: 'https://shobujbazar.com/api/',
+            products: []
+        }
+    },
+    created () {
+        this.getSpecialOfferProducts()
+    },
+    methods: {
+        async getSpecialOfferProducts () {
+            const result = await this.$axios.$get(this.baseUrl + 'special-offer')
+            if (result.success) {
+                this.products = result.data
+            }
+        }
+    }
 }
 </script>

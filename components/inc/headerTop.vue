@@ -19,7 +19,7 @@
                     <div class="header-top-menu">
                         <ul>
                             <li>
-                                <a href="https://shobujbazar.com/contact">Contact us</a>
+                                <nuxt-link to="/contact">Contact us</nuxt-link>
                             </li>
                             <li>
                                 <a href="https://shobujbazar.com/customer/login">Login</a>
