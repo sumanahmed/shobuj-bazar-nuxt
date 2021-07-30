@@ -9,7 +9,11 @@
             <div class="col-lg-9 col-md-9">
                 <div class="spinner-border text-success loader" role="status" v-if="loading"></div>
                 <slot v-else>
-                    <singleItem :products="products" />                 
+                    <div class="row">
+                        <div v-for="(product, index) in products" :key="index" class="col-lg-3">
+                            <singleItem :product="product" />
+                        </div>  
+                    </div>                   
                 </slot>                
             </div>
         </div>
@@ -51,9 +55,9 @@ export default {
         async getProducts () {
             this.$store.dispatch('loadingState', true)
             const param = { type: this.$route.query.type, id: this.$route.query.id}
-            const result = await this.$axios.$get('api/all-products', { params: param })
+            const result = await this.$axios.$get('api/category-products', { params: param })
             if (result.success) {
-                this.products = result.data.data
+                this.products = result.data
             } else {
                 this.products = []
                 this.message = result.message

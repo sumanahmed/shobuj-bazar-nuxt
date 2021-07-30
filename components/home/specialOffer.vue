@@ -13,7 +13,11 @@
                         </div>
                         <div class="spinner-border text-success loader" role="status" v-if="loading"></div>
                         <slot v-else>
-                            <singleItem :products="products" />  
+                            <div class="row">
+                                <div v-for="(product, index) in products" :key="index" class="col-lg-3">
+                                    <singleItem :product="product" />
+                                </div>  
+                            </div>  
                         </slot> 
                     </div>
                 </div>
@@ -29,6 +33,11 @@ export default {
     data () {
         return {
             products: []
+        }
+    },
+    computed: {
+        loading () {
+            return this.$store.state.loading
         }
     },
     created () {

@@ -8,7 +8,7 @@
                 <div class="p-4 pt-5">
                     <ul class="list-unstyled main-ul components mb-5">
                         <li v-for="(masterCategory, index) in masterCategories" :key="index">
-                            <nuxt-link :to="{path: '/category?type=1' + '&id=' + masterCategory.id }" :class="masterCategory.category ? 'has-dropdown' : '' ">{{ masterCategory.en_name }}</nuxt-link>
+                            <nuxt-link :to="{path: '/products?type=1' + '&id=' + masterCategory.id }" :class="masterCategory.category ? 'has-dropdown' : '' ">{{ masterCategory.en_name }}</nuxt-link>
                             <!-- <ul v-if="masterCategory.category.length > 0" class="list-unstyled has-sub" >
                                 <li v-for="(category, indx) in masterCategory.category" :key="indx">
                                     <a href="#" >{{ category.en_name }}</a>
