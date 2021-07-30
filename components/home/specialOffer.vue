@@ -25,7 +25,6 @@ export default {
     components: { singleItem },
     data () {
         return {
-            baseUrl: 'https://shobujbazar.com/api/',
             products: []
         }
     },
@@ -34,7 +33,7 @@ export default {
     },
     methods: {
         async getSpecialOfferProducts () {
-            const result = await this.$axios.$get(this.baseUrl + 'special-offer')
+            const result = await this.$axios.$get('api/special-offer')
             if (result.success) {
                 this.products = result.data
             }

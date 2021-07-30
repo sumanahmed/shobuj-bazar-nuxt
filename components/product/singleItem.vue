@@ -6,7 +6,7 @@
                     <a href="#!">
                         <span class="onsale">{{ product.quantity >= 1 ? 'Sale!' : 'Stock Out' }}</span>
                         <img src="" class="img-fluid" alt="">
-                        <img :src="baseUrl + product.thumbnail" class="img-fluid" alt="">
+                        <img :src="`${$axios.defaults.baseURL}` + product.thumbnail" class="img-fluid" alt="">
                     </a>
                     <div class="product-hover-icons">
                         <a v-if="product.quantity >= 1" class="active addtocart" href="#!" :id="product.id" data-tooltip="Add to cart"> <span class="icon_cart_alt"></span></a>
@@ -34,7 +34,7 @@
         props: ['products'],
         data () {
             return {
-                baseUrl: 'https://shobujbazar.com/'
+                // baseUrl: 'https://shobujbazar.com/'
             }
         }
     }

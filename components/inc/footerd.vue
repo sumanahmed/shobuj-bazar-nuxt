@@ -180,5 +180,6 @@
             </div>
             <!--=======  End of copyright section  =======-->
         </footer>
+        <a href="#" class="scroll-top"></a>
     </div>
 </template>

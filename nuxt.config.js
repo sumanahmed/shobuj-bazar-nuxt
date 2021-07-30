@@ -2,8 +2,6 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  baseUrl: 'https://shobujbazar.com/api',
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Shobuj Bazar',
@@ -67,7 +65,9 @@ export default {
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'https://shobujbazar.com/'
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
