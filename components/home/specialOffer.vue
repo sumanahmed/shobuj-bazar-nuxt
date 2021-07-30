@@ -11,7 +11,10 @@
                                 </div>
                             </nav>
                         </div>
-                        <singleItem :products="products" />   
+                        <div class="spinner-border text-success loader" role="status" v-if="loading"></div>
+                        <slot v-else>
+                            <singleItem :products="products" />  
+                        </slot> 
                     </div>
                 </div>
             </div>
@@ -33,10 +36,14 @@ export default {
     },
     methods: {
         async getSpecialOfferProducts () {
+            this.$store.dispatch('loadingState', true)
             const result = await this.$axios.$get('api/special-offer')
             if (result.success) {
                 this.products = result.data
+            } else {
+                this.products = []
             }
+            this.$store.dispatch('loadingState', false)
         }
     }
 }

@@ -2,6 +2,11 @@
     width:100% !important;
 }
 
+.loader, .infinite-loading-container {
+    display: block;
+    margin: 10% auto;
+}
+
 .error{
     color: red;
 }

@@ -33,9 +33,7 @@
         name: 'singleItem',
         props: ['products'],
         data () {
-            return {
-                // baseUrl: 'https://shobujbazar.com/'
-            }
+            return {}
         }
     }
 </script>
